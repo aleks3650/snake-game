@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightslategray;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(20, 35px);
+  grid-template-rows: repeat(20, 35px);
+  gap: 0px;
+  outline: 4px solid rgba(245, 245, 245, 1);
+}
+.cell {
+  width: 35px;
+  height: 35px;
+  outline: 2px solid rgba(245, 245, 245, 0.635);
+  margin: 0px;
+  background-color: lightslategray;
+}
+.all {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Title,
+H1 {
+  font-size: 62px;
+  color: whitesmoke;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+.snake {
+  background-color: green;
+  color: green;
+}
+.Restart {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background-color: darkslategray;
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.food {
+  background-color: red;
+}
